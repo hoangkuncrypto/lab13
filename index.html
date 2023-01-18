@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Carousel page</title>
+  </head>
+  <body>
+    <!-- Bootstrap Code here -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Carousel</a>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#link" class="nav-link">Link</a></li>
+            <li class="nav-item">
+              <a href="#disable" class="nav-link">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner-->
+    <section class="mb-5 pb-5">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active anh1">
+              <div class="container">
+                <div class="carousel-caption text-start text-light">
+                  <h1>Example Headline</h1>
+                  <p>
+                    Some representative placeholder content for the first slide
+                    of the carousel.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="anh-nen-dep-nhat_105620947.jpeg"
+                class="d-block w-100"
+                alt="anh1"
+                height="500rem"
+                width="100%"
+              />
+            </div>
+            <div class="carousel-item bg-anh2">
+              <div class="container">
+                <div class="carousel-caption text-start text-light">
+                  <h1>Another Example Headline</h1>
+                  <p>
+                    Some representative placeholder content for the first slide
+                    of the carousel.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-lg btn-primary">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="Hinh-nen-phong-canh.webp"
+                class="d-block w-100"
+                alt="anh2"
+                height="500rem"
+                width="100%"
+              />
+            </div>
+            <div class="carousel-item bg-anh3">
+              <div class="container">
+                <div class="carousel-caption text-start text-light">
+                  <h1>One more for good measure</h1>
+                  <p>
+                    Some representative placeholder content for the first slide
+                    of the carousel.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-lg btn-primary">Brown gallery</a>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="thien-nhien-hinh-nen-phong-canh-dep-full-hd.webp"
+                class="d-block w-100"
+                alt="anh3"
+                height="500rem"
+                width="100%"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-5 mt-5 mb-0 bg-light text-dark">
+      <div class="container lead d-flex justify-content-between">
+        <div>
+                    Copyright &copy:2017 - 2021&nbsp; Company,Inc ・<a
+              href="#"
+              alt="privacy"
+              >Privacy</a
+            >・<a href="#" alt="term">Term</a>
+          
+        </div>
+        <div>
+          <a href="#" alt="back to top" class="p-5 m-5 text-right"
+            >Back to top</a
+          >
+             </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
